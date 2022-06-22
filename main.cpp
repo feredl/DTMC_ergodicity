@@ -2,6 +2,11 @@
 #include "matrix.cpp"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    matrix mx;
+    mx.set_size(2);
+    float probability; 
+    std::cin >> probability; 
+    mx.insert_probability(probability); 
+    mx.print();  
     return 0;
 }

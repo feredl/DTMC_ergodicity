@@ -6,13 +6,19 @@
 class matrix {
 private:
     int size;
-    
     std::vector<std::vector<float>> mx;
-    bool if_correct(matrix m);
-    matrix insert_probability(float probability);
-    bool if_right_stochastic();
+
+public:
     matrix();
     ~matrix();
+
+    void set_size(int size);
+    int get_size(); 
+
+    matrix insert_probability(float probability);
+    bool if_right_stochastic();
+    void print();
+
 };
 
 
