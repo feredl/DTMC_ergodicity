@@ -4,17 +4,6 @@
 
 using namespace std;
 
-void vector_print(std::vector<std::vector<int>> res) {
-    for (int i = 0; i < res.size(); i++) {
-        for (int j = 0; j < res.size(); j++) {
-            if (j == res.size() - 1) { 
-            std::cout << res[i][j] << std::endl; 
-            }
-            else std::cout << res[i][j] << "\t"; 
-        }
-    }
-}
-
 int main() {
     int n;
     std::cout << "Enter the amount of states in this markov chain>\t"; 
